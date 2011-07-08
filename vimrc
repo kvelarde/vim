@@ -21,6 +21,14 @@ set cul
 set fdm=indent
 set foldminlines=4
 
+" Show trailing whitespace:
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
 " Highlight all search results.
 set hls
 
@@ -54,3 +62,9 @@ map <C-G>l :Glog<cr>
 
 " vim-nerdtree key mappings:
 map <C-N> :NERDTreeToggle<cr>
+
+" Remove all trailing whitespace:
+map <C-R>s :%s/\s\+$//e<cr>
+
+" Convert all tabs appropriately:
+map <C-R>t :%retab!<cr>
