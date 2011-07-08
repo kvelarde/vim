@@ -1,0 +1,3 @@
+[submodule "bundle/vim-python"]
+	path = bundle/vim-python
+	url = git://github.com/vim-scripts/python.vim--Vasiliev.git
