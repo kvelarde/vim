@@ -13,3 +13,6 @@
 [submodule "bundle/vim-pep8"]
 	path = bundle/vim-pep8
 	url = git://github.com/vim-scripts/pep8.git
+[submodule "bundle/vim-snipmate"]
+	path = bundle/vim-snipmate
+	url = git://github.com/msanders/snipmate.vim.git
