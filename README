@@ -6,3 +6,21 @@ __   _(_)_ __ ___        _ __ __| | ___  __ _  __ _  ___  ___
                                         |___/ |___/
 
 My personal vim configuration.
+
+
+INSTALL
+=======
+
+To install, do::
+
+    cd ~/
+    git clone git://github.com/rdegges/vim.git .vim
+    ln -s ~/.vim/vimrc ~/.vimrc
+    cd ~/.vim
+    git submodule init
+    git submodule update
+    git submodule foreach git submodule init
+    git submodule foreach git submodule update
+
+    sudo pip install -U pyflakes
+    sudo pip install -U pep8
