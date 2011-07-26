@@ -67,4 +67,4 @@ map <C-N> :NERDTreeToggle<cr>
 map <C-R>s :%s/\s\+$//e<cr>
 
 " Convert all tabs appropriately:
-map <C-R>t :%retab!<cr>
+map <C-R>t :set expandtab<cr>:%retab!<cr>
