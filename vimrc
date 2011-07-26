@@ -29,6 +29,9 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+" Use the same symbols as TextMate for tabstops and EOLs.
+set listchars=tab:▸\ ,eol:¬
+
 " Highlight all search results.
 set hls
 
@@ -68,3 +71,6 @@ map <C-R>s :%s/\s\+$//e<cr>
 
 " Convert all tabs appropriately:
 map <C-R>t :set expandtab<cr>:%retab!<cr>
+
+" Shortcut to rapidly toggle `set list`.
+nmap <C-L> :set list!<cr>
