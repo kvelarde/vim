@@ -74,3 +74,9 @@ map <C-R>t :set expandtab<cr>:%retab!<cr>
 
 " Shortcut to rapidly toggle `set list`.
 nmap <C-L> :set list!<cr>
+
+" Bubble single and multiple lines (uses vim-unimpaired plugin).
+nmap <C-J> [e
+nmap <C-K> ]e
+vmap <C-J> [egv
+vmap <C-K> ]egv
