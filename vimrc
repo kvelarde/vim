@@ -40,6 +40,9 @@ set is
 set ic
 set scs
 
+" Allow liberal use of hidden buffers.
+set hidden
+
 " Enable python syntax highlighting (from the ``vim-python`` plugin.)
 let python_highlight_all = 1
 
