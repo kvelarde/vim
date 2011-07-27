@@ -83,3 +83,22 @@ nmap <C-J> [e
 nmap <C-K> ]e
 vmap <C-J> [egv
 vmap <C-K> ]egv
+" Notes  notes
+"
+" ctl-l - List hidden chars. If you see the '~' in your python
+" code, YOU have fucked something up.
+
+" Fix:
+"   ctl-r t - retab to spaces, cause if its not PEP8 its cool.
+"
+"   ctl-l - removes trailing white spaces.
+"
+"   Git Stuff -
+"   ctl-g s - git status
+"       To use '-' to add or remove stagged file
+"       Rember q only to quit stag mode
+"
+"   ctl-g c - commig: user :wq
+"   ctl-g p - push commit
+"
+"   ctl-n - need tree: scroll and press enter
