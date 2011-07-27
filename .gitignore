@@ -1,2 +1,5 @@
 # vim history
 .netrwhist
+*.pyc
+*.swp
+~
